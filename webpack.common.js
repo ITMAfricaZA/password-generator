@@ -2,8 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const REPO_URL = 'https://github.com/calebj0seph/password-generator';
-const BASE_URL = 'https://calebj0seph.github.io/password-generator';
+const BASE_URL = '.';
 
 module.exports = {
   entry: ['focus-visible', './src/index.jsx'],
@@ -44,9 +43,12 @@ module.exports = {
       templateParameters: {
         title: 'Password Generator',
         description: 'A highly configurable tool for generating cryptographically secure random passwords inside your browser.',
-        repoUrl: REPO_URL,
-        canonicalUrl: BASE_URL,
         openGraphImageUrl: `${BASE_URL}/static/og.jpg`,
+		FaviconICO: `${BASE_URL}/favicon/favicon.ico`,
+		FaviconSVG: `${BASE_URL}/favicon/favicon.svg`,
+		Favicon16: `${BASE_URL}/favicon/favicon-16x16.png`,
+		Favicon32: `${BASE_URL}/favicon/favicon-32x32.png`,
+		Favicon196: `${BASE_URL}/favicon/favicon-196x196.png`,
       },
       minify: {
         collapseWhitespace: true,
@@ -55,6 +57,11 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: 'static/*.jpg', to: './' },
+      ],
+    }),
+	new CopyWebpackPlugin({
+      patterns: [
+        { from: 'favicon/*', to: './' },
       ],
     }),
   ],
