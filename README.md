@@ -1,9 +1,6 @@
-# [Password Generator](https://calebj0seph.github.io/password-generator)
+# Password Generator
 > A configurable and cryptographically secure random password generator that
   runs inside your browser.
-
-__Looking to use Password Generator? Head
-[here](https://calebj0seph.github.io/password-generator)!__
 
 ## About
 Password Generator is a web app that generates random passwords inside your
@@ -19,6 +16,10 @@ browser. Features include:
 
 Password Generator is built with [React](https://reactjs.org/) and
 [Material-UI](https://material-ui.com/).
+
+Thanks to [uxwing.com](https://uxwing.com/padlock-icon/) for supplying the favicon image asset used.
+
+And, of course, thanks to Caleb Joeseph for creating the original [password-generator](https://github.com/calebj0seph/password-generator) project!
 
 ## License
 Password Generator is provided under the terms of the MIT License. See the
