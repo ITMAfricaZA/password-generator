@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><%= title %></title>
   <meta name="description" content="<%= description %>">
-  <link rel="canonical" href="<%= canonicalUrl %>">
   <meta property="og:title" content="<%= title %>">
   <meta property="og:type" content="website">
   <meta property="og:description" content="<%= description %>">
   <meta property="og:image" content="<%= openGraphImageUrl %>">
-  <meta property="og:url" content="<%= canonicalUrl %>">
-  <meta name="twitter:title" content="<%= title %>">
-  <meta name="twitter:description" content="<%= description %>">
-  <meta name="twitter:image" content="<%= openGraphImageUrl %>">
-  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#20BF55">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-</head>
-<body>
-  <a class="github-fork-ribbon" href="<%= repoUrl %>" data-ribbon="Fork me on GitHub" title="Fork me on GitHub" target="_blank" rel="noreferrer">Fork me on GitHub</a>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="<%= FaviconSVG %>">
+  <link rel="icon" type="image/png" sizes="196x196" href="<%= Favicon196 %>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= Favicon32 %>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= Favicon16 %>">
+  <link rel="shortcut icon" href="<%= FaviconICO %>">
+ </head>
+ <body>
   <div id="app"></div>
-</body>
+ </body>
 </html>
