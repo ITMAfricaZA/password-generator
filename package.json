@@ -2,22 +2,18 @@
   "name": "password-generator",
   "version": "1.0.0",
   "description": "A secure & customisable password generator made with Vue.js",
-  "homepage": "http://calebj0seph.github.io/password-generator",
-  "repository": "github:calebj0seph/password-generator",
   "scripts": {
     "build": "rimraf dist && webpack --mode=production --progress --config webpack.prod.js",
     "start": "webpack serve --color --progress --config webpack.dev.js",
     "lint": "eslint src/**/*.{js,jsx}",
     "format": "prettier --write src/**/*.{js,jsx} && eslint src/**/*.{js,jsx} --fix"
   },
-  "author": "Caleb Joseph",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.12.2",
     "focus-visible": "^5.2.0",
-    "github-fork-ribbon-css": "^0.2.3",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
